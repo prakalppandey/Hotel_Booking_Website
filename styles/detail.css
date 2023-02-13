@@ -1,37 +1,98 @@
-html,body{
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color:  #e0e0e0;
-    
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+
 }
+
 /* ------main div--------- */
-.main{
+.main {
     height: 100vh;
 }
+
 /* ---header --------*/
-header{
+header {
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    right: 0px;
+    overflow: hidden;
 }
+
+/* ----------header(Login button)------- */
+.Loginbutton {
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+}
+/* -----Main content between Header and footer---- */
+.content {
+    position: absolute;
+    top: 60px;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+
+}
+
 /* --------part 1--------- */
-#hotelimage{
+#hotelimage {
     margin-top: 2%;
     margin-left: 4%;
     margin-right: 4%;
 }
-#paymentform{
+
+#paymentform {
     margin-left: 4%;
     margin-bottom: 1%;
 }
+
 /* -----------part 2---------- */
-.part2{
+.part2 {
     margin-top: 1%;
     margin-left: 4%;
     margin-right: 4%;
     margin-bottom: 2%;
 }
+
+/* -----Footer(Middle part)---Part B-------------- */
+
+.partB {
+    font-size: 10px;
+    margin-top: 25px;
+}
+
+/* -------footer(contactbutton)---------- */
+.contactbutton {
+    color: black;
+    text-decoration: none;
+
+}
+
 /* --footer------ */
 
-footer{
+footer {
+
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+
+
 }
