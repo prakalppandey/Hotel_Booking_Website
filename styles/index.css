@@ -1,107 +1,151 @@
-html,body{
+html,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color:  #e0e0e0;
-    font-family:'Ubuntu', sans-serif;
-    
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+
 }
+
 /* ------main div--------- */
-.main{
+.main {
     height: 100vh;
-   
+
 }
 
 
 /* ---header --------*/
-header{
+header {
     background-color: rosybrown;
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    position:absolute;
-    top:0px;
-    left:0px;
-    height:60px;
-    right:0px;
-    overflow:hidden;
-    
-   
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60px;
+    right: 0px;
+    overflow: hidden;
+
+
 }
 
 /* ----------header(Login button)------- */
-.Loginbutton{
+.Loginbutton {
     color: black;
     margin-right: 15px;
     text-decoration: none;
 }
 
 /* -----Main content between Header and footer---- */
-.content{
-    position:absolute;
-    top:60px;
-    bottom:40px;
-    left:0px;
-    right:0px;
-    overflow:auto;
-  
+.content {
+    position: absolute;
+    top: 60px;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+
 }
 
 /* ----- part 1 of content-------- */
-.part1{
+.part1 {
     background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
     height: 380px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 
 
 }
+
 /* ---PART 1----City box (where we need to type city)---------- */
-.citybox{
+.citybox {
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
     width: 80vh;
+    outline: none;
 }
+
 /* -------part 2 content------------ */
-.part2{
+.part2 {
     padding: 4%;
-    margin-left: 15%;
-    margin-right: 15%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
-#delhi,#goa,#hyderabad,#kolkata{
-    border-radius: 25%;
+
+/* -----hover on delhi banglore so on.... image-------------- */
+.image {
+    position: relative;
 }
+  .overlayer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    background-color: black;
+    border-radius: 40px;
+  }
+  
+  .image:hover .overlayer {
+    opacity: 0.5;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/* ----------------hover end-------------- */
+/* -------------box shawdow od cards------------- */
+ #delhi,
+#goa,
+#hyderabad,
+#kolkata {
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+
+
+}
+/* --------End box shawdow------------------------- */
 
 /* -------part 2 endzzzzzzzzz-------- */
 /* ----------Part 3---------------- */
-.part3{
+.part3 {
     display: flex;
     justify-content: center;
     padding: 20px;
     margin-bottom: 40px;
-    
+
 }
 
 /* -----Footer(Middle part)---Part B-------------- */
 
-.partB{
-    font-size:10px;
+.partB {
+    font-size: 10px;
     margin-top: 25px;
 }
 
 
 /* -------footer(contactbutton)---------- */
-.contactbutton{
+.contactbutton {
     color: black;
     text-decoration: none;
 
@@ -109,19 +153,19 @@ header{
 
 /* --footer------ */
 
-footer{
-    
+footer {
+
     background-color: rosybrown;
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    padding: 10px;  
-    position:absolute;
-    bottom:0px;
-    height:40px;
-    left:0px;
-    right:0px;
-    overflow:hidden; 
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
 
 
 }

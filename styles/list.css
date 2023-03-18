@@ -58,20 +58,29 @@ header {
 /* -----------Part 2--------- */
 .part2 {
    margin-left: 5%;
+   display: flex;
+   flex-wrap: wrap;
+   
 
+   
 }
 
 .hotel1,
 .hotel2,
 .hotel3 {
-    background-color: rgb(132, 136, 139);
-    margin: 2%;
-    width: 45%;
-    display: inline-block;
-    justify-content: center;
-
-
+    background-color:  lightgrey;
+    margin: 4%;
+    width: 40%;
+    display: flex;
+    
+   
+ 
 }
+.part2hotel1,.part2hotel2,.part2hotel3{
+    margin-left: 6%;
+    margin-top: 2%;
+}
+
 
 /* -----Footer(Middle part)---Part B-------------- */
 

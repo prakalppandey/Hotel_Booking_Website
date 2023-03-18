@@ -1,8 +1,12 @@
-html,
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+
     background-color: #e0e0e0;
     font-family: 'Ubuntu', sans-serif;
 
@@ -33,8 +37,10 @@ header {
     margin-right: 15px;
     text-decoration: none;
 }
+
 /* -----Main content between Header and footer---- */
 .content {
+
     position: absolute;
     top: 60px;
     bottom: 40px;
@@ -45,16 +51,75 @@ header {
 }
 
 /* --------part 1--------- */
-#hotelimage {
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
+.part1 {
+    display: flex;
+
+    border: 1px solid black;
+    margin: 2%;
+
 }
 
-#paymentform {
-    margin-left: 4%;
-    margin-bottom: 1%;
+.part1first {
+    width: 70%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+
 }
+
+#hotelimage {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.part1second {
+    width: 30%;
+}
+
+input {
+    width: 60%;
+
+}
+
+/* ---------ALL Form element------------- */
+input[type="number"] {
+    margin-left: 63px;
+}
+
+input[name="name"] {
+    margin-left: 65px;
+}
+
+input[name="fromdate"] {
+    margin-left: 32px;
+}
+
+input[name="todate"] {
+    margin-left: 51px;
+}
+
+input[name="price"] {
+    margin-left: 76px;
+}
+
+input[type="submit"] {
+    margin-left: 137px;
+    width: 20%;
+    padding: 2%;
+    ;
+}
+
+label {
+    margin-left: 20px;
+}
+
+input,
+label {
+    margin-top: 40px;
+
+}
+
+/* ------------end part 1-------- */
 
 /* -----------part 2---------- */
 .part2 {
@@ -63,6 +128,14 @@ header {
     margin-right: 4%;
     margin-bottom: 2%;
 }
+
+.part2 h2 ,.part2 p,.part2 h5{
+    margin-bottom: 20px;
+}
+.part2 li{
+    margin-left: 40px;
+}
+
 
 /* -----Footer(Middle part)---Part B-------------- */
 
