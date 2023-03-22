@@ -22,6 +22,20 @@ html,body{
     width: 70px;
     height: 70px;
     border: 12px solid #f3f3f3 ;
-    border-top-color: #444444;
+    border-top-color:#444444 ;
     border-radius: 50%;
+    animation-name: circleloader;
+    animation: spin 2s linear infinite;
 }
+
+@keyframes circleloader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+/* -------------- animation adding-------- */

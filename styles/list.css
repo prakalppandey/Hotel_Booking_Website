@@ -27,6 +27,11 @@ header {
     overflow: hidden;
 }
 
+#logo {
+
+    margin-left: 15px;
+}
+
 /* ----------header(Login button)------- */
 .Loginbutton {
     color: black;
@@ -49,34 +54,41 @@ header {
 .part1 {
     width: 100vw;
     display: inline-block;
-    text-align: center;
     padding: 20px;
-    word-spacing: 40px;
+
 
 }
 
 /* -----------Part 2--------- */
 .part2 {
-   margin-left: 5%;
-   display: flex;
-   flex-wrap: wrap;
-   
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
 
-   
+
+
 }
 
 .hotel1,
 .hotel2,
 .hotel3 {
-    background-color:  lightgrey;
+    background-color: lightgrey;
     margin: 4%;
     width: 40%;
     display: flex;
-    
-   
- 
+
+
 }
-.part2hotel1,.part2hotel2,.part2hotel3{
+
+.hotel1:hover,
+.hotel2:hover,
+.hotel3:hover {
+    background-color: rosybrown;
+}
+
+.part2hotel1,
+.part2hotel2,
+.part2hotel3 {
     margin-left: 6%;
     margin-top: 2%;
 }
@@ -107,7 +119,7 @@ footer {
     padding: 10px;
     position: absolute;
     bottom: 0px;
-    height: 40px;
+    height: 60px;
     left: 0px;
     right: 0px;
     overflow: hidden;

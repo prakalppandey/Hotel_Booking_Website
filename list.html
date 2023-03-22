@@ -5,8 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- css added -->
     <link rel="stylesheet" href="styles/list.css">
+    <!-- ------Font style------------ -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-------------- -Bootstrap added ------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!---------bootstrap script------------  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <title>List</title>
 </head>
 
@@ -16,65 +31,137 @@
         <header>
             <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="60px" width="60px" id="logo"></a>
 
-            <a href="login.html" class="Loginbutton">Login</a>
+            <button type="button" class="btn btn-light Loginbutton" data-toggle="modal" data-target="#exampleModal"
+                id="sign-in-button example-modal">
+                LOGIN
+            </button>
+
         </header>
+        <!-- ----------model login --------- -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 40%;" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-header">
+                            Please Login
+                        </h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="p-3">
+                            <div class="form-group row p-3">
+                                <label for="inputUsername" class="col-sm-2 col-form-label ">Username:</label>
+                                <div class="col-sm-8 ">
+                                    <input type="text" class="form-control" id="inputUsername"
+                                        placeholder="Enter UserName" style="box-shadow:none;">
+                                </div>
+                            </div>
+                            <div class="form-group row p-3">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password: </label>
+                                <div class="col-sm-8 ">
+                                    <input type="password" class="form-control" id="inputPassword"
+                                        placeholder="Password" style="box-shadow:none; ">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary mx-auto" id="example-modal" type="submit"
+                                    value="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         <!-- --------header endsssss------ -->
         <!-- -------CONTENT--------------- -->
         <div class="content">
-            <div class="part1">
+            <!-- ------Toggle buttons list and map-->
+            <div class="part1 d-flex justify-content-center">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                            role="tab" aria-controls="pills-home" aria-selected="true">List View</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                            role="tab" aria-controls="pills-profile" aria-selected="false">Map View</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-                <a href="#part 2" style="text-decoration: none; color: black; font-weight: bold;">List-View</a>
+                    <!-- ---All List items ----->
+                    <div class="part2" id="part 2">
+                        <!-- -------------1st hotel--------- -->
+                        <div class="hotel1">
+                            <div class="part1hotel1">
+                                <a href="detail.html" style="text-decoration: none; color: black;">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                                        height="250px" width="250px" alt="Radisson Blu Hotel">
+                            </div>
+                            <div class="part2hotel1">
 
-                <a href="#map-view" style="text-decoration: none;color: black; font-weight: bold;">Map-View </a>
+                                <h3>Radisson Blu Hotel</h3>
+                                <p>5.0 star</p>
+                                <p>New-delhi</p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- -----------------------------  -->
+                        <!-- -------------2nd hotel--------- -->
+                        <div class="hotel2">
+                            <div class="part1hotel2">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+                                    height="250px" width="250px" alt="The Lalit New Delhi">
+                            </div>
+                            <div class="part2hotel2">
+                                <h3>The Lalit New Delhi</h3>
+                                <p>4.5 star</p>
+                                <p>New-delhi</p>
+                            </div>
+                        </div>
+
+                        <!-- -----------------------------  -->
+                        <!-- -------------3rd hotel--------- -->
+                        <div class="hotel3">
+                            <div class="part1hotel3">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+                                    height="250px" width="250px" alt="The Lalit New Delhi">
+                            </div>
+                            <div class="part2hotel3">
+                                <h3>Taj Palace</h3>
+                                <p> 4.0 star</p>
+                                <p>New-delhi</p>
+                            </div>
+                        </div>
+                        <!-- -----------------------------  -->
+
+
+                    </div>
+                    <!-- all list item endsssss -->
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                    <!----------------- Map pic------------ -->
+                    <div class="part 3" id="part 3">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Mappic">
+                    </div>
+                </div>
+
+                <!-- -------map pic endsssssss---------- -->
+
 
             </div>
-            <div class="part2" id="part 2">
-                <!-- -------------1st hotel--------- -->
-                <div class="hotel1">
-                    <div class="part1hotel1">
-                        <a href="detail.html" style="text-decoration: none; color: black;">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                                height="250px" width="250px" alt="Radisson Blu Hotel">
-                    </div>
-                    <div class="part2hotel1">
-
-                        <h3>Radisson Blu Hotel</h3>
-                        <p>5.0 star</p>
-                        <p>New-delhi</p>
-                        </a>
-                    </div>
-                </div>
-                <!-- -----------------------------  -->
-                <!-- -------------2nd hotel--------- -->
-                <div class="hotel2">
-                    <div class="part1hotel2">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" height="250px"
-                            width="250px" alt="The Lalit New Delhi">
-                    </div>
-                    <div class="part2hotel2">
-                        <h3>The Lalit New Delhi</h3>
-                        <p>4.5 star</p>
-                        <p>New-delhi</p>
-                    </div>
-                </div>
-
-                <!-- -----------------------------  -->
-                <!-- -------------3rd hotel--------- -->
-                <div class="hotel3">
-                    <div class="part1hotel3">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                            height="250px" width="250px" alt="The Lalit New Delhi">
-                    </div>
-                    <div class="part2hotel3">
-                        <h3>Taj Palace</h3>
-                        <p> 4.0 star</p>
-                        <p>New-delhi</p>
-                    </div>
-                </div>
-                <!-- -----------------------------  -->
-
-
-            </div>
+            <!------------ toggle end -------------->
             <!--------- Map view part ------------->
             <div class="part 3" id="part 3">
 
@@ -84,8 +171,11 @@
         <!-- -----footer------------- -->
         <footer>
             <div class="part A">
-                <a href="contact.html" class="contactbutton">Contact Us</a>
+                <button type="button" class="btn btn-info text-light contactbutton" data-toggle="modal"
+                    data-target="#exampleModalcenter" id="sign-in-button example-modal"
+                    style="margin-left:20px ;">Contact Us</button>
             </div>
+
             <!-- ---------ALL LOGOS -->
             <div class="partB">
                 &#169; 2020 ROOM SEARCH PVT. LTD.
@@ -103,6 +193,52 @@
                     <img src="assests/images/twitter.png" alt="twitter logo" height="20px" width="22px">
                 </a>
             </div>
+
+            <!-- ------model contact---------------------- -->
+            <div class="modal fade" id="exampleModalcenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-header">
+                                <b>Get in touch</b>
+                            </h5>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="index.html" method="get">
+                                <div>
+                                    <p>Thank you for reaching out!</br>Please enter your Email we will get back to you!!
+                                    </p>
+
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail" class="col-sm-1 col-form-label">Email: </label>
+                                    <div class="col-sm-8 ">
+                                        <input type="text" class="form-control" id="inputEmail"
+                                            placeholder="Enter your Email ID" style="box-shadow:none; ">
+                                    </div>
+                                </div>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="example-modal" type="submit"
+                                value="submit">
+                                Submit
+                            </button>
+
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!-- -----Model endsssssssssssss-------------- -->
 
         </footer>
         <!---------------- footer ends---------- -->

@@ -30,6 +30,10 @@ header {
 
 
 }
+#logo{
+    
+     margin-left: 15px;
+}
 
 /* ----------header(Login button)------- */
 .Loginbutton {
@@ -162,7 +166,7 @@ footer {
     padding: 10px;
     position: absolute;
     bottom: 0px;
-    height: 40px;
+    height: 60px;
     left: 0px;
     right: 0px;
     overflow: hidden;
