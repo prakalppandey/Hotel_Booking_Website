@@ -68,7 +68,8 @@ header {
     width: 70%;
     border-right: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    
 
 }
 
@@ -84,6 +85,23 @@ header {
 input {
     width: 60%;
 
+}
+.part1first .carousel-control-prev {
+    left: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #171616;
+}
+ 
+.part1first .carousel-control-next {
+    right: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #0f0e0e;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
 }
 
 /* ---------ALL Form element------------- */
@@ -104,7 +122,7 @@ input[name="todate"] {
 }
 
 input[name="price"] {
-    margin-left: 76px;
+    margin-left: 78px;
 }
 
 input[type="submit"] {
